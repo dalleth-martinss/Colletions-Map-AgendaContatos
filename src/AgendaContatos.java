@@ -21,4 +21,25 @@ public class AgendaContatos {
         System.out.println(agendaContatosMap);
     }
 
+    public Integer pesquisarPorNome(String nome){
+        Integer numeroPorNome = null;
+        if(!agendaContatosMap.isEmpty()){
+            numeroPorNome = agendaContatosMap.get(nome);
+        }
+        return numeroPorNome;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class AgendaContatos {
+
+    private Map<String, Integer> agendaContatosMap;
+
+    public AgendaContatos() { //inicia a instanciação com o novo HashMap
+        this.agendaContatosMap = new HashMap<>();
+    }
+    public void adicionarContato(String nome, Integer telefone){
+        agendaContatosMap.put(nome, telefone);
+    }
+
+    public void removerContato(String nome){
+        if (!agendaContatosMap.isEmpty()){
+            agendaContatosMap.remove(nome);
+        }
+    }
+    public void exibirContato(){
+        System.out.println(agendaContatosMap);
+    }
+
+}
